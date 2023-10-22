@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+     /* background: url(); 
+    background-size: cover;
+    background-position: center;  */
+  }
+  
+  /* .herovideo{
+    margin-top: 50px;
+  }
+  @media (width<=800px){
+  .herovideo{
+    margin-top: 80px;
+  }
+  }
+  @media (width<=700px){
+  .herovideo{
+    margin-top: 100px;
+  }
+  }
+  @media (width<=600px){
+  .herovideo{
+    margin-top: 100px;
+  }
+  } */
+
+
+
+  /*-------------------------------------- NavBar------------------------------------------- */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    /* box-shadow: 0 5px 10px rgba(0,0,0,.1); */
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+  
+  .logo{
+    /* margin: 0px 0px; */
+    width: 250px;
+       max-width: 40%;
+       margin: 20px 0 ;
+  }
+  
+  header .navbar ul{
+    list-style: none;
+    
+  }
+  
+  header .navbar ul li{
+    position: relative;
+    float: left;
+    
+  }
+  
+  header .navbar ul li a{
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 18px;
+  color: #333;
+  display: block;
+  text-decoration: none;
+  
+  
+  }
+  header .navbar ul li a:hover{
+   /* background-color: #333;
+   color: rgb(255, 255, 255); */
+   font-weight: bold;
+  }
+
+  header .navbar ul li a:active{
+    font-weight: bold;
+  }
+  
+  /* --------dropdown--------- */
+  header .navbar ul li ul{
+     position: absolute;
+     left: 0;
+     width: 300px;
+     
+     background:#fff;
+     display: none;
+  
+  }
+  
+  header .navbar ul li ul li{
+    width: 100%;
+    height: 55px;
+   
+    border-top: 1px dashed black;
+  }
+  
+  
+  header .navbar ul li ul  {
+    overflow-y: scroll;
+  }
+  header .navbar ul li ul li ul{
+    left: 200px;
+    overflow: auto;
+    top: 0;
+  }
+  header .navbar ul li:focus-within > ul,
+  header .navbar ul li:hover > ul{
+    display: initial;
+  }
+  
+  
+  #menu-bar{
+    display: none;
+  }
+  header label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+  }
+  
+  
+  
+  
+  @media(width<=600px){
+  
+    header{
+      padding: 20px;
+    }
+  
+  
+  
+  header label{
+    display: initial;
+  }
+  header .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;right: 0;
+    background: #fff;
+    /* border-top: 1px solid rgba(0,0,0,.1); */
+    display: none;
+  }
+  
+  header .navbar ul li{
+    width: 100%;
+  }
+  header .navbar ul li ul{
+    position: relative;
+    width: 100%;
+  
+  }
+  header .navbar ul li ul li{
+    background:#eee;
+  }
+  header .navbar ul li ul li ul{
+  width: 100%;
+  left: 0;
+  }
+  
+  #menu-bar:checked ~ .navbar{
+    display: initial;
+  }
+  
+  }
+
+  /* Hero Video */
+
+  .herovideo{
+    margin-top: 30px;
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid red; */
+  }
+
+  video{
+    height: 100%;
+    width: 100%;
+  }
+  .videobox{
+    margin-top: 20px;
+    height: inherit;
+
+  }
+
+
+.leftwala{
+    position: absolute;
+    top: 200px;
+    z-index: 2;
+    right: 200px;
+}
+.leftwala .headingkeliye h3{
+    font-size: 60px;
+    font-weight: 200;
+}
+.leftwala .chaltahuawa h3{
+    font-size: 25px;
+    color: red;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.textboxkeliye{
+    border-bottom: 1px solid black;
+}
+
+.leftwala .textboxkeliye input{
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+
+
+
+/* red wala div */
+
+  .redwaladiv{
+         display: flex;
+         width: 1080px;
+         height: 150px;
+         background-color:rgb(255, 0, 0);
+         border-radius:10px;
+         /* justify-content: center; */
+         justify-content: space-evenly;
+         align-items: center;
+         margin: 0 auto;
+         margin-top: -70px;
+         z-index: 8000;
+  }
+
+  .redboxwrapper{
+    position: relative;
+  }
+
+  .redwaladiv> :nth-child(1){
+    border-right: 2px solid white;
+  }
+  .redwaladiv> :nth-child(2){
+    border-right: 2px solid white;
+  }
+  .redwaladiv> :nth-child(3){
+    border-right: 2px solid white;
+  }
+  .redwaladiv .fourdivs{
+    text-align: center;
+    color: white;
+    padding: 5px 16px;
+
+  }
+
+.fourdivs h1{
+    font-weight: 400;
+}
+
+
+
+.about{
+  display: flex;
+  justify-content: center;
+
+  width:1080px ;
+  gap: 30px;
+  height: 500px;
+  margin: 80px auto;
+  /* border: 1px solid red; */
+}
+
+.imgbox{
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  /* border: 1px solid red; */
+  
+}
+.imgbox img{
+ max-width: 100% ;
+  
+}
+.textbox{
+  padding: 40px;
+  width: calc(100% - 400px);;
+  /* border: 1px solid red; */
+}
+
+.textbox h1{
+   font-size: 48px !important;
+   font-weight: 300;
+}
+
+.textbox p{
+  font-size: 16px;
+line-height: 26px;
+padding: 0 !important;
+color: #000000;
+font-weight: 300;
+}
+
+
+
+
+
+.meetourleader{
+  background-color:#f3f3f3 ;
+  width: 100%;
+  height: 800px;
+}
+
+.meetourleader h1{
+  text-align: center;
+  padding: 50px 0;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.carasoul{
+  width: 70%;
+  height:60% ;
+  margin: 5px auto;
+  border: 1px solid red;
+}
+
+
+
+
+.welcometoworld{
+  
+width: 100%;
+height: 500px;
+}
+
+.welcometoworld h1{
+  margin: 50px auto;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 300;
+
+
+}
+.flexkrnekeliye{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+.btndiv{
+  position: relative;
+  background-color: white;
+  width: 70%;
+  height: 40px;
+  padding: 10px;
+  margin-top: -20px;
+  z-index: 50;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow:  0 2px 40px 5px rgba(0, 0, 0, 0.13);
+
+}
+.btndiv a{
+
+  
+  text-decoration: none;
+  font-weight: 300;
+  color: red;
+  text-align: center;
+}
+
+.storyimage{
+  overflow: hidden;
+  
+}
+
+.storyimage:hover img{
+  scale: 1.2;
+}
+img{
+  transition: all ease 1s;
+
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: black
+    
+    ;
+}
+footer .row{
+    padding: 20px 30px ;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+footer .cols{
+    width: 250px;
+    height: auto;
+
+}
